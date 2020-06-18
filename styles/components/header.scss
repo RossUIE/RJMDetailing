@@ -1,0 +1,170 @@
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(20 70);
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+    color: $white;
+    a {
+        color: $white;
+    }
+    
+    @media only screen and (max-width: 659px) {
+        padding: rem(20 20);
+        background-color: $white;
+
+        a {
+            color: $bodyText;
+        }
+
+        svg {
+            fill: $bodyText;
+        }
+    }
+
+    &.scrolled {
+        box-shadow: 0 1px 5px 0 rgba(0,0,0,0.098039215686275);
+        background: $white;
+        transition: all 0.3s ease;
+        color: $bodyText;
+
+        li {
+            color: $bodyText;
+        }
+
+        svg {
+            fill: $bodyText;
+        }
+
+        a {
+            color: $bodyText;
+        }
+    }
+
+    .nav-link {
+        &:hover {
+            color: $brand;
+            cursor: pointer;
+        }
+        @media only screen and (max-width: 659px) {
+            color: $bodyText;
+            font-weight: bold;
+            &:hover {
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 659px) {
+        padding: rem(20 30);
+    }
+
+    &_links {
+        display: flex;
+        justify-content: center;   
+        
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                padding: rem(0 15);
+                color: $white;
+            }
+        }
+
+        @media only screen and (max-width: 659px) {
+            position: absolute;
+            right: 0;
+            height: calc(100vh - 69px);
+            top: rem(69);
+            background: $brand;
+            width: 57%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: rem(20);
+            z-index: 101;
+            ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+
+                li {
+                    color: $white;
+                    padding: rem(20);
+                    opacity: 0;
+                    width: 100%;
+                }
+            }
+            a {
+                width: 100%;
+            }
+        }
+    }
+
+    &_social {
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        svg {
+            width: rem(25);
+            margin-left: rem(10);
+            fill:$white
+        }
+
+        svg:hover {
+            fill: $brand;
+        }
+        @media only screen and (max-width: 659px) {
+            text-align: center;
+            svg:hover {
+                fill: $white;
+            }
+        }
+    }
+
+    .burger {
+        display: none;
+        cursor: pointer;
+        div {
+            background-color: $bodyText;
+            border-radius: 2px;
+            width: 25px;
+            height: 3px;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+        @media only screen and (max-width: 659px) {
+            display: block;
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px)
+        }
+    }
+}

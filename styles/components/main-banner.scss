@@ -1,0 +1,24 @@
+.c-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: rem(700);
+    background-image: url('../../assets/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: rem(90);
+
+    &-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        text-align: center;
+
+        h1 {
+            margin: rem(20 0);
+        }
+    }
+}

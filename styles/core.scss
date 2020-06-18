@@ -1,0 +1,139 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: $white;
+    font-family: sans-serif;
+    color: $bodyText;
+    scroll-behavior: smooth;
+}
+
+.ml-2 {
+    margin-left: rem(15);
+}
+
+a {
+    color: $bodyText;
+    text-decoration: none;
+}
+
+p,h1,h2,h3,h4,h5 {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+}
+
+.btn {
+    background: transparent;
+    color: $white;
+    border: 2px solid $white;
+    border-radius: rem(50);
+    padding: rem(10 40);
+
+    &:hover {
+        background: $brand;
+        border-color: $brand;
+        transition: all 0.2s ease;
+    }
+}
+
+.c-backdrop {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    z-index: 100;
+    display: none;
+
+    @media only screen and (max-width: 659px) {
+        display: none;
+    }
+
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $brand;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.098039215686275);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+
+    &::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1em;
+        line-height: 50px;
+        color: #fff;
+    }
+
+   &.show {
+        opacity: 1;
+        visibility: visible;
+      }
+}
+
+.backdrop-active {
+    display: block;
+}
+
+.divider {
+    max-width: rem(100);
+    width: 100%;
+    height: rem(5);
+    background-color: $brand;
+    margin: rem(20 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, textarea {
+    border: none;
+    margin-top: rem(20);
+    font: inherit;
+    color: inherit;
+    &:focus {
+        outline: none;
+    }
+}
+
+label {
+    color: $placeholder;
+}
+
+textarea {
+    resize: none;
+    height: rem(210);
+    font: inherit;
+}
+
+.error {
+    border-color: $errorRed !important;
+}

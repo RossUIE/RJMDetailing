@@ -1,0 +1,21 @@
+// colours
+$white: #fff !default;
+$black: #222 !default;
+$background-white: #f3f6f9 !default;
+$input-border: #cbcbd2 !default;
+$brand: #F5B900 !default;
+$error: #FFBABA !default;
+$errorRed: #cc0000 !default;
+$green: #40C237 !default;
+$navy: #324a5e !default;
+$bodyText: #707070 !default;
+$border-color: #E2E6E7 !default;
+$placeholder: #A8B1B6 !default; 
+$DarkGreen: #0D8547 !default;
+$success-green: #dbf0d9 !default;
+$green-darker: darken($green, 7%);
+
+// Font Sizes
+$root-font-size: 16 !default; // used for REM base
+$base-font-size: 1rem !default;
+

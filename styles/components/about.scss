@@ -1,0 +1,35 @@
+.c-about {
+    width: 100%;
+    display: flex;
+
+    @media only screen and (max-width: 659px) {
+        flex-direction: column;
+    }
+
+    &-illustration {
+        min-height: rem(500);
+        background-image: url('../../assets/about.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50%;
+        position: relative;
+        @media only screen and (max-width: 659px) {
+            width: 100%;
+        }
+    }
+
+    &-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: justify;
+        width: 50%;
+        padding: rem(50 70);
+        
+        @media only screen and (max-width: 659px) {
+            width: 100%;
+            padding: rem(20);
+        }
+    }
+}

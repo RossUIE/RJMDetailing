@@ -1,0 +1,33 @@
+.c-process {
+    background-color: $brand;
+    padding: rem(70 0);
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: rem(1400);
+        margin: 0 auto;
+        @media only screen and (max-width: 659px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            width: rem(70);
+            height: rem(70);
+        }
+
+        &_item {
+            padding: rem(20 30);
+            text-align: center;
+            @media only screen and (max-width: 659px) {
+                margin-bottom: 50px;
+            }
+
+            h3 {
+                margin: rem(10 0);
+            }
+        }
+    }
+}

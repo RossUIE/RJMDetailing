@@ -1,0 +1,16 @@
+//core, functions and variables
+@import './variables.scss',
+        './functions.scss',
+        './core.scss';
+
+
+//components
+@import './components/header.scss',
+        './components/main-banner.scss',
+        './components/process.scss',
+        './components/about.scss',
+        './components/packages.scss',
+        './components/contact.scss',
+        './components/contact-form.scss',
+        './components/footer.scss'
+        ;
