@@ -1,0 +1,91 @@
+.c-gallery {
+    width: 100%;
+    margin: auto;
+    padding: rem(10);
+
+    &_options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: rem(10);
+        border-bottom: 1px solid $input-border;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+
+            li {
+                padding: rem(10);
+            }
+        }
+    }
+
+    &_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+        margin: auto;
+        position: relative;
+
+        a {
+            display: flex;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            max-width: 460px;
+            max-height: 500px;
+            margin: rem(10);
+            display: flex;
+            flex: auto;
+            flex-grow: 1;
+            flex-basis: rem(250);
+            justify-content:space-between;
+            align-items: center; 
+            object-fit: cover;
+            box-shadow: 0 1px 5px 0 rgba(0,0,0,0.3);
+            cursor: pointer;
+                &:hover {
+                    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.8);
+                }
+
+            @media only screen and (max-width: 659px) {
+                max-width: 90%
+            }
+
+            &::before {
+                content: " ";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 30px;
+                height: 30px;
+                border: 2px solid red;
+                border-color: transparent #e1e1e1 transparent #e1e1e1;
+                border-radius: 50%;
+                animation: loader 1s linear infinite;
+                z-index: 0;
+            }
+   
+
+            img {
+                width: auto;
+                height: 100%;
+                flex: 1;
+                position: relative;
+                cursor: pointer;  
+            }
+        }
+        @keyframes loader {
+            0% {
+              transform: translate(-50%,-50%) rotate(0deg);
+            }
+            100% {
+              transform: translate(-50%,-50%) rotate(360deg);
+            }
+        }
+    }
+}

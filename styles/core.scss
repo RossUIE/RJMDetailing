@@ -35,6 +35,11 @@ button {
     font: inherit;
 }
 
+.active {
+    background-color: $brand;
+    color: $white;
+}
+
 .btn {
     background: transparent;
     color: $white;
