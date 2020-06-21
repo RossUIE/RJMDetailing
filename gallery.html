@@ -44,25 +44,67 @@
             </div>
             <!-- end of banner -->
             <div class="c-gallery">
-                <div class="c-gallery_options">
+                <div class="c-gallery_options" id="c-gallery_options">
                     <ul>
-                        <li class="active">All</li>
-                        <li>Interior</li>
-                        <li>Exterior</li>
+                        <li class="gallery-option active" onclick="filterSelection('all')">All</li>
+                        <li class="gallery-option" onclick="filterSelection('interior')">Interior</li>
+                        <li class="gallery-option" onclick="filterSelection('exterior')">Exterior</li>
                     </ul>
                 </div>
                 <div class="c-gallery_content">
-                    <a href="./assets/about.png"><img class="gallery-item" src="./assets/about.png"/></a>
-                    <a href="./assets/about.png"><img class="gallery-item" src="./assets/about.png"/></a>
-                    <a href="./assets/about.pngg"><img class="gallery-item" src="./assets/about.png"/></a>
+                    <!-- start of black civic -->
+                    <a href="./assets/gallery/civic-black-1.jpg"><img class="gallery-item exterior" alt="Car" src="./assets/gallery/civic-black-1.jpg"/></a>
+                    <a href="./assets/gallery/civic-black-2.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-black-2.jpg"/></a>
+                    <a href="./assets/gallery/civic-black-3.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-black-3.jpg"/></a>
 
-                    <a href="./assets/about.png"><img class="gallery-item" src="./assets/about.png"/></a>
-                    <a href="./assets/about.png"><img class="gallery-item" src="./assets/about.png"/></a>
-                    <a href="./assets/about.pngg"><img class="gallery-item" src="./assets/about.png"/></a>
+                    <a href="./assets/gallery/civic-black-4.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-black-4.jpg"/></a>
+                    <a href="./assets/gallery/civic-black-5.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-black-5.jpg"/></a>
+                    <a href="./assets/gallery/civic-black-6.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-black-6.jpg"/></a>
 
-                    <a href="./assets/about.png"><img class="gallery-item" src="./assets/about.png"/></a>
-                    <a href="./assets/about.png"><img class="gallery-item" src="./assets/about.png"/></a>
-                    <a href="./assets/about.pngg"><img class="gallery-item" src="./assets/about.png"/></a>
+                    <a href="./assets/gallery/civic-black-7.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-black-7.jpg"/></a>
+                    <a href="./assets/gallery/civic-black-8.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-black-8.jpg"/></a>
+                    <a href="./assets/gallery/civic-black-9.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-black-9.jpg"/></a>
+                    <!-- interior -->
+                    <a href="./assets/gallery/civic-black-interior-1.jpg"><img class="gallery-item interior" src="./assets/gallery/civic-black-interior-1.jpg"/></a>
+                    <a href="./assets/gallery/civic-black-interior-2.jpg"><img class="gallery-item interior" src="./assets/gallery/civic-black-interior-2.jpg"/></a>
+                    <!-- end of black civic -->
+
+                    <!-- start of red civic -->
+                    <a href="./assets/gallery/civic-red-1.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-red-1.jpg"/></a>
+                    <a href="./assets/gallery/civic-red-2.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-red-2.jpg"/></a>
+                    <a href="./assets/gallery/civic-red-3.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-red-3.jpg"/></a>
+
+                    <a href="./assets/gallery/civic-red-4.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-red-4.jpg"/></a>
+                    <a href="./assets/gallery/civic-red-5.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-red-5.jpg"/></a>
+                    <a href="./assets/gallery/civic-red-6.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-red-6.jpg"/></a>
+
+                    <a href="./assets/gallery/civic-red-7.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-red-7.jpg"/></a>
+                    <a href="./assets/gallery/civic-red-8.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-red-8.jpg"/></a>
+                    <a href="./assets/gallery/civic-red-6.jpg"><img class="gallery-item exterior" src="./assets/gallery/civic-red-6.jpg"/></a>
+                    <!-- end of red civic -->
+
+                    <!-- start of s3 -->
+                    <a href="./assets/gallery/s3-1.jpg"><img class="gallery-item exterior" src="./assets/gallery/s3-1.jpg"/></a>
+                    <a href="./assets/gallery/s3-2.jpg"><img class="gallery-item exterior" src="./assets/gallery/s3-2.jpg"/></a>
+                    <a href="./assets/gallery/s3-3.jpg"><img class="gallery-item exterior" src="./assets/gallery/s3-3.jpg"/></a>
+
+                    <a href="./assets/gallery/s3-4.jpg"><img class="gallery-item exterior" src="./assets/gallery/s3-4.jpg"/></a>
+                    <a href="./assets/gallery/s3-5.jpg"><img class="gallery-item exterior" src="./assets/gallery/s3-5.jpg"/></a>
+                    <a href="./assets/gallery/s3-6.jpg"><img class="gallery-item exterior" src="./assets/gallery/s3-6.jpg"/></a>
+
+                    <a href="./assets/gallery/s3-7.jpg"><img class="gallery-item exterior" src="./assets/gallery/s3-7.jpg"/></a>
+                    <a href="./assets/gallery/s3-8.jpg"><img class="gallery-item exterior" src="./assets/gallery/s3-8.jpg"/></a>
+                     <!-- end of s3 -->
+
+                     <!-- start of sus -->
+                     <a href="./assets/gallery/sus-1.jpg"><img class="gallery-item exterior" src="./assets/gallery/sus-1.jpg"/></a>
+                     <a href="./assets/gallery/sus-2.jpg"><img class="gallery-item exterior" src="./assets/gallery/sus-2.jpg"/></a>
+                     <a href="./assets/gallery/sus-scratch-3bad.jpg"><img class="gallery-item exterior" src="./assets/gallery/sus-scratch-3bad.jpg"/></a>
+                     <a href="./assets/gallery/sus-scratch-3.jpg"><img class="gallery-item exterior" src="./assets/gallery/sus-scratch-3.jpg"/></a>
+                     <a href="./assets/gallery/sus-scratch-1.jpg"><img class="gallery-item exterior" src="./assets/gallery/sus-scratch-1.jpg"/></a>
+                     <a href="./assets/gallery/sus-scratch-2.jpg"><img class="gallery-item exterior" src="./assets/gallery/sus-scratch-2.jpg"/></a>
+                     <a href="./assets/gallery/sus-4.jpg"><img class="gallery-item exterior" src="./assets/gallery/sus-4.jpg"/></a>
+            
                 </div>
             </div>
         </div><!-- main container end -->
@@ -70,6 +112,7 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- JS -->
-    <script src="js/main.js"></script>
+    <script src="js/core.js"></script>
     <script src="./js/magnific.js"></script>
+    <script src="./js/gallery.js"></script>
 </html>
