@@ -675,7 +675,7 @@ footer {
       align-items: center;
       object-fit: cover;
       box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
-      transition: all 2s ease-in;
+      transition: all 0.5s ease-in;
       display: none;
       cursor: pointer; }
       .c-gallery_content .gallery-item.show {
